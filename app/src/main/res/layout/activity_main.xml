@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center">
+    <Button
+        android:id="@+id/btn_start"
+        android:background="#3a243b"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start tracking"
+        android:layout_margin="10dp"
+        android:padding="6dp"
+        />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:background="#3a243b"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop tracking"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/btn_start"/>
+
+
+
+</LinearLayout>
+
+
+    <com.example.assignment03.CustomView
+        android:padding="10dp"
+        android:id="@+id/cv_linechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="@string/tv_lat_text" />
+    <TextView
+        android:id="@+id/tv_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="@string/tv_long_text" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_analyse"
+        android:background="#3a243b"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Analyse"
+        android:layout_margin="10dp"
+        android:padding="6dp"
+        />
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="" />
+
+    </LinearLayout>
+</LinearLayout>
